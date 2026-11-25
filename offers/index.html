@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en-KE">
+<html lang="en-KE" data-base="/autocom-preview" data-static="1">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,7 +13,9 @@
 <link rel="icon" href="/autocom-preview/assets/img/favicon.svg?v=598127" type="image/svg+xml">
 <link rel="preload" href="/autocom-preview/assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/autocom-preview/assets/css/app.css?v=598571">
+<link rel="stylesheet" href="/autocom-preview/assets/css/showroom.css?v=626572">
 <script src="/autocom-preview/assets/js/app.js?v=598073" defer></script>
+<script src="/autocom-preview/assets/js/showroom.js?v=625728" defer></script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://baswet.github.io/autocom-preview/"},{"@type":"ListItem","position":2,"name":"Offers"}]}</script>
 <meta name="robots" content="noindex, nofollow">
 <script src="/autocom-preview/assets/js/preview.js" defer></script>
@@ -21,29 +23,37 @@
 <body>
 <div class="preview-banner" role="note">Design preview — for review only. Prices, stock and some details are still being confirmed. Forms are not connected.</div>
 <a class="skip-link" href="#main">Skip to content</a>
+<div class="announce" role="region" aria-label="Announcement">
+  <div class="container">
+          <span><svg class="icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg> Showroom: Highway Towers, 1st Floor, Nakuru</span>      <span class="dot-sep hide-sm" aria-hidden="true">•</span><span class="hide-sm">Monday – Saturday: 8:30am – 6:30pm</span>      <span class="dot-sep" aria-hidden="true">•</span><a href="https://wa.me/254723923144?text=Hello%20AutoCom%2C%20I%20have%20a%20question." target="_blank" rel="noopener"><svg class="icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7L4 20Z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 1c-1-.5-1.5-1-2-2l1-1-1-2L9 9.5Z"/></svg> WhatsApp 0723 923 144</a>      </div>
+</div>
 <header class="site-header">
   <div class="container header-inner">
     <button class="icon-btn menu-toggle" type="button" aria-controls="mobile-nav" aria-expanded="false" aria-label="Open menu"><svg class="icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
     <a class="logo" href="/autocom-preview/" aria-label="AutoCom home">
-      <svg width="30" height="30" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9" fill="#111318"/><path d="M9 22 15 9h2l6 13h-3.2l-1.3-3h-5l-1.3 3H9Zm5.6-5.6h3.2L16.2 12.6l-1.6 3.8Z" fill="#fff"/><circle cx="24.5" cy="9" r="2" fill="#16B8D4"/></svg>
+      <svg width="30" height="30" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9" fill="#0e1014"/><path d="M9 22 15 9h2l6 13h-3.2l-1.3-3h-5l-1.3 3H9Zm5.6-5.6h3.2L16.2 12.6l-1.6 3.8Z" fill="#fff"/><circle cx="24.5" cy="9" r="2" fill="#16B8D4"/></svg>
       <span>Auto<b>Com</b></span>
     </a>
     <nav class="main-nav" aria-label="Main">
       <ul>
-                  <li><a href="/autocom-preview/">Home</a></li>
                   <li><a href="/autocom-preview/shop/">Shop</a></li>
-                  <li><a href="/autocom-preview/shop/#categories">Categories</a></li>
-                  <li><a href="/autocom-preview/new-arrivals/">New Arrivals</a></li>
-                  <li><a href="/autocom-preview/offers/" aria-current="page">Offers</a></li>
-                  <li><a href="/autocom-preview/about/">Support</a></li>
+                  <li><a href="/autocom-preview/category/laptops/">Laptops</a></li>
+                  <li><a href="/autocom-preview/laptop-finder/">Laptop Finder</a></li>
+                  <li><a href="/autocom-preview/workspaces/">Workspaces</a></li>
+                  <li><a href="/autocom-preview/business/">Business</a></li>
+                  <li><a href="/autocom-preview/brands/">Brands</a></li>
+                  <li><a href="/autocom-preview/about/">Showroom</a></li>
               </ul>
     </nav>
-    <form class="header-search" action="/autocom-preview/shop/" method="get" role="search">
+    <form class="header-search" action="/autocom-preview/shop/" method="get" role="search" data-suggest>
       <label class="sr-only" for="site-search">Search products</label>
-      <svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>      <input id="site-search" type="search" name="q" placeholder="Search laptops, printers, brands…" value="" maxlength="80" autocomplete="off">
+      <svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>      <input id="site-search" type="search" name="q" placeholder="Search laptops, printers, brands…" value="" maxlength="80" autocomplete="off" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="site-search-list">
+      <ul class="search-suggest" id="site-search-list" role="listbox" hidden></ul>
     </form>
-    <a class="icon-btn quote-btn" href="/autocom-preview/quote/" aria-label="Quotation list, 0 items">
-      <svg class="icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 8h14l-1 12H6L5 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>          </a>
+    <div class="header-tools">
+      <a class="icon-btn js-only" href="/autocom-preview/compare/" aria-label="Compare products" data-compare-link><svg class="icon" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4" y="4" width="7" height="7" rx="1"/><rect x="13" y="4" width="7" height="7" rx="1"/><rect x="4" y="13" width="7" height="7" rx="1"/><rect x="13" y="13" width="7" height="7" rx="1"/></svg><span class="badge-count" data-compare-count hidden>0</span></a>
+      <a class="icon-btn" href="/autocom-preview/cart/" aria-label="Cart" data-cart-link><svg class="icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 8h14l-1 12H6L5 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="badge-count" data-cart-count hidden>0</span></a>
+    </div>
   </div>
   <div class="mobile-nav" id="mobile-nav" hidden>
     <form class="mobile-search" action="/autocom-preview/shop/" method="get" role="search">
@@ -51,8 +61,10 @@
       <svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>      <input id="mobile-search" type="search" name="q" placeholder="Search products" maxlength="80">
     </form>
     <ul>
-      <li><a href="/autocom-preview/">Home</a></li><li><a href="/autocom-preview/shop/">Shop</a></li><li><a href="/autocom-preview/shop/#categories">Categories</a></li><li><a href="/autocom-preview/new-arrivals/">New Arrivals</a></li><li><a href="/autocom-preview/offers/">Offers</a></li><li><a href="/autocom-preview/about/">Support</a></li>      <li><a href="/autocom-preview/contact/">Contact</a></li>
-      <li><a href="/autocom-preview/quote/">Quotation list</a></li>
+      <li><a href="/autocom-preview/">Home</a></li>
+      <li><a href="/autocom-preview/shop/">Shop</a></li><li><a href="/autocom-preview/category/laptops/">Laptops</a></li><li><a href="/autocom-preview/laptop-finder/">Laptop Finder</a></li><li><a href="/autocom-preview/workspaces/">Workspaces</a></li><li><a href="/autocom-preview/business/">Business</a></li><li><a href="/autocom-preview/brands/">Brands</a></li><li><a href="/autocom-preview/about/">Showroom</a></li>      <li><a href="/autocom-preview/compare/">Compare</a></li>
+      <li><a href="/autocom-preview/cart/">Cart</a></li>
+      <li><a href="/autocom-preview/contact/">Contact</a></li>
     </ul>
   </div>
 </header>
@@ -70,6 +82,10 @@
   </header>
 
   
+  <nav class="quick-chips" aria-label="Shop by purpose">
+    <a class="chip is-on" href="/autocom-preview/offers/">All purposes</a>
+    <a class="chip" href="/autocom-preview/offers/?use=student">Students</a><a class="chip" href="/autocom-preview/offers/?use=office">Office</a><a class="chip" href="/autocom-preview/offers/?use=business">Business &amp; travel</a><a class="chip" href="/autocom-preview/offers/?use=creative">Creative work</a><a class="chip" href="/autocom-preview/offers/?use=home">Home &amp; family</a>    <a class="chip" href="/autocom-preview/laptop-finder/"><svg class="icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="5" y="5" width="14" height="10" rx="1.5"/><path d="M3 18h18"/></svg> Laptop Finder</a>
+  </nav>
   <div class="listing-layout">
     <aside class="filters" id="filters" aria-label="Filters" data-drawer>
       <div class="filters-head">
@@ -78,27 +94,28 @@
       </div>
       <form method="get" action="/autocom-preview/offers/" class="filters-form">
                 <input type="hidden" name="sort" value="newest">
-        <fieldset>
+                <fieldset>
           <legend>Category</legend>
           <ul class="filter-links">
             <li><a href="/autocom-preview/shop/" aria-current="true">All products</a></li>
                           <li><a href="/autocom-preview/category/laptops/">Laptops <span class="muted">(1)</span></a></li>
-                          <li><a href="/autocom-preview/category/desktops-workstations/">Desktops &amp; Workstations <span class="muted">(1)</span></a></li>
-                          <li><a href="/autocom-preview/category/tft-led-screens/">TFT &amp; LED Screens <span class="muted">(0)</span></a></li>
-                          <li><a href="/autocom-preview/category/printers/">Printers <span class="muted">(0)</span></a></li>
-                          <li><a href="/autocom-preview/category/networking/">Networking <span class="muted">(2)</span></a></li>
+                          <li><a href="/autocom-preview/category/desktops-workstations/">Desktops <span class="muted">(1)</span></a></li>
+                          <li><a href="/autocom-preview/category/monitors/">Monitors <span class="muted">(0)</span></a></li>
+                          <li><a href="/autocom-preview/category/printers/">Printers <span class="muted">(1)</span></a></li>
+                          <li><a href="/autocom-preview/category/accessories-peripherals/">Accessories <span class="muted">(3)</span></a></li>
+                          <li><a href="/autocom-preview/category/storage/">Storage <span class="muted">(1)</span></a></li>
+                          <li><a href="/autocom-preview/category/networking/">Networking <span class="muted">(3)</span></a></li>
                           <li><a href="/autocom-preview/category/cctv-security/">CCTV &amp; Security <span class="muted">(1)</span></a></li>
-                          <li><a href="/autocom-preview/category/point-of-sale/">Point of Sale <span class="muted">(0)</span></a></li>
                           <li><a href="/autocom-preview/category/ups-power/">UPS &amp; Power <span class="muted">(1)</span></a></li>
                           <li><a href="/autocom-preview/category/tablets/">Tablets <span class="muted">(1)</span></a></li>
-                          <li><a href="/autocom-preview/category/accessories-peripherals/">Accessories &amp; Peripherals <span class="muted">(1)</span></a></li>
+                          <li><a href="/autocom-preview/category/point-of-sale/">Point of Sale <span class="muted">(0)</span></a></li>
                       </ul>
         </fieldset>
                 <fieldset>
           <legend><label for="f-brand">Brand</label></legend>
           <select id="f-brand" name="brand">
             <option value="">All brands</option>
-            <option value="HP">HP</option><option value="Hikvision">Hikvision</option><option value="Lenovo">Lenovo</option><option value="Mercury">Mercury</option><option value="Modio">Modio</option><option value="TP-Link">TP-Link</option>          </select>
+            <option value="Epson">Epson</option><option value="HP">HP</option><option value="Hikvision">Hikvision</option><option value="Lenovo">Lenovo</option><option value="Mercury">Mercury</option><option value="Modio">Modio</option><option value="TP-Link">TP-Link</option>          </select>
         </fieldset>
                 <fieldset>
           <legend>Availability</legend>
@@ -148,13 +165,18 @@
       <ul>
         <li><a href="/autocom-preview/shop/">All products</a></li>
         <li><a href="/autocom-preview/new-arrivals/">New arrivals</a></li>
-        <li><a href="/autocom-preview/category/laptops/">Laptops</a></li><li><a href="/autocom-preview/category/desktops-workstations/">Desktops &amp; Workstations</a></li><li><a href="/autocom-preview/category/tft-led-screens/">TFT &amp; LED Screens</a></li><li><a href="/autocom-preview/category/printers/">Printers</a></li><li><a href="/autocom-preview/category/networking/">Networking</a></li>      </ul>
+        <li><a href="/autocom-preview/laptop-finder/">Laptop Finder</a></li>
+        <li><a href="/autocom-preview/compare/">Compare</a></li>
+        <li><a href="/autocom-preview/workspaces/">Build your workspace</a></li>
+        <li><a href="/autocom-preview/brands/">Brands</a></li>
+        <li><a href="/autocom-preview/category/laptops/">Laptops</a></li><li><a href="/autocom-preview/category/desktops-workstations/">Desktops</a></li><li><a href="/autocom-preview/category/monitors/">Monitors</a></li><li><a href="/autocom-preview/category/printers/">Printers</a></li>      </ul>
     </nav>
     <nav aria-label="Help">
       <h2 class="footer-h">Help</h2>
       <ul>
         <li><a href="/autocom-preview/contact/">Contact &amp; enquiries</a></li>
-        <li><a href="/autocom-preview/quote/">Request a quotation</a></li>
+        <li><a href="/autocom-preview/business/">Business solutions</a></li>
+        <li><a href="/autocom-preview/cart/">Cart &amp; order requests</a></li>
         <li><a href="/autocom-preview/about/">About &amp; support</a></li>
                 <li><a href="/autocom-preview/privacy/">Privacy notice</a></li>
       </ul>
@@ -171,5 +193,7 @@ Sunday: Closed</span></p>                      </address>
     <p class="muted">Product names and brands belong to their respective owners. Listing a brand does not imply an official partnership.</p>
   </div>
 </footer>
+<div class="cmp-tray" id="cmp-tray" role="region" aria-label="Products selected for comparison" hidden></div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
 </body>
 </html>

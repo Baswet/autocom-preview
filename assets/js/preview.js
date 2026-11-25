@@ -6,18 +6,20 @@
   var params = new URLSearchParams(location.search);
 
   // Listing pages: filter + sort the rendered cards.
-  var grid = document.querySelector('.listing-main .product-grid');
+  var grid = document.querySelector('.listing-main .p-grid');
   if (grid) {
     var q = (params.get('q') || '').trim().toLowerCase();
     var brand = params.get('brand') || '';
     var avail = params.get('availability') || '';
     var sort = params.get('sort') || 'newest';
-    var cards = Array.prototype.slice.call(grid.querySelectorAll('.product-card'));
+    var use = params.get('use') || '';
+    var cards = Array.prototype.slice.call(grid.querySelectorAll('.p-card'));
     var terms = q ? q.split(/\s+/) : [];
     var shown = 0;
     cards.forEach(function (c) {
       var ok = terms.every(function (t) { return c.dataset.name.indexOf(t) !== -1; });
       if (brand && c.dataset.brand !== brand) ok = false;
+      if (use && (',' + (c.dataset.uses || '') + ',').indexOf(',' + use + ',') === -1) ok = false;
       if (avail === 'in_stock' && ['in_stock', 'limited'].indexOf(c.dataset.availability) === -1) ok = false;
       c.hidden = !ok;
       if (ok) shown++;
@@ -31,6 +33,7 @@
     document.querySelectorAll('input[name="q"]').forEach(function (i) { i.value = params.get('q') || ''; });
     var count = document.querySelector('.result-count');
     if (count) count.textContent = shown + ' product' + (shown === 1 ? '' : 's');
+    document.querySelectorAll('.quick-chips .chip').forEach(function (a) { var m = /[?&]use=([a-z]+)/.exec(a.getAttribute('href') || ''); a.classList.toggle('is-on', m ? m[1] === use : !use && /All purposes/.test(a.textContent)); });
     if (q) {
       var h = document.querySelector('.page-head h1'); if (h) h.textContent = 'Results for “' + params.get('q') + '”';
     }
